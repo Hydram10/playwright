@@ -46,84 +46,64 @@ test('test con dos usuarios', async ({ browser }) => {
     await pepePage.getByText('Barco 2').click();
     await pepePage.locator('.grid-cell').first().click();
     await pepePage.getByText('Barco 3').click();
-    await pepePage.locator('.grid > div:nth-child(2)').first().click();
-    await pepePage.locator('.grid > div:nth-child(2)').first().click();
+    await pepePage.locator('div:nth-child(12)').first().click();
+    await pepePage.locator('div:nth-child(12)').first().click();
+    await pepePage.locator('div:nth-child(12)').first().click();
     await pepePage.getByText('Barco 4').click();
-    await pepePage.locator('.grid > div:nth-child(5)').first().click();
+    await pepePage.locator('div:nth-child(41)').first().click();
     await pepePage.getByText('Barco 5').click();
-    await pepePage.locator('div:nth-child(41)').first().click();
-    await pepePage.locator('div:nth-child(41)').first().click();
-    await pepePage.locator('div:nth-child(41)').first().click();
-    await pepePage.getByText('Barco 6').click();
     await pepePage.locator('div:nth-child(51)').first().click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
+    await pepePage.getByText('Barco 6').click();
+    await pepePage.locator('div:nth-child(61)').first().click();
+
     //BOTÓN A JUGAR
     await pepePage.getByRole('button', { name: '!A JUGAR!' }).click();
     await pepePage.getByRole('button', { name: 'Cerrar' }).click();
+
 
     //JUAN
     await juanPage.getByText('Barco 2').click();
     await juanPage.locator('.grid-cell').first().click();
     await juanPage.getByText('Barco 3').click();
-    await juanPage.locator('.grid > div:nth-child(2)').first().click();
-    await juanPage.locator('.grid > div:nth-child(2)').first().click();
+    await juanPage.locator('div:nth-child(12)').first().click();
+    await juanPage.locator('div:nth-child(12)').first().click();
+    await juanPage.locator('div:nth-child(12)').first().click();
     await juanPage.getByText('Barco 4').click();
-    await juanPage.locator('.grid > div:nth-child(5)').first().click();
+    await juanPage.locator('div:nth-child(41)').first().click();
     await juanPage.getByText('Barco 5').click();
-    await juanPage.locator('div:nth-child(41)').first().click();
-    await juanPage.locator('div:nth-child(41)').first().click();
-    await juanPage.locator('div:nth-child(41)').first().click();
-    await juanPage.getByText('Barco 6').click();
     await juanPage.locator('div:nth-child(51)').first().click();
-    await juanPage.getByRole('button', { name: 'Cerrar' }).click();
+    await juanPage.getByText('Barco 6').click();
+    await juanPage.locator('div:nth-child(61)').first().click();
+
 
     //BOTÓN A JUGAR
     await juanPage.getByRole('button', { name: '!A JUGAR!' }).click();
-   
-    //CERRAR MODAL A JUGAR
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await juanPage.getByRole('button', { name: 'Cerrar' }).click();
+    //CERRAR MODAL ¡A JUGAR!
+    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
+
 
     //DISPARAR
     await pepePage.locator('div:nth-child(2) > .grid > div').first().click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(11)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(2)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(13)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(24)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(5)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(15)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(25)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(35)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(12)').click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(23)').click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(34)').click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(41)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(42)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(43)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(44)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(45)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(51)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(52)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(53)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(54)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
     await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(55)').click();
-    await pepePage.getByRole('button', { name: 'Cerrar' }).click();
-    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(56)').click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(61)').click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(62)').click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(63)').click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(64)').click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(65)').click();
+    await pepePage.locator('div:nth-child(2) > .grid > div:nth-child(66)').click();
 
     //CERRAR MODAL FINAL PARTIDA
     await pepePage.getByRole('button', { name: 'Cerrar' }).click();
